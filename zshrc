@@ -85,3 +85,4 @@ export PATH=$PATH:~/.composer/vendor/bin
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/.aliases/*

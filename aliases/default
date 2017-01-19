@@ -1,0 +1,4 @@
+# Dash
+function dash() {
+    open dash://$1:$2
+}
