@@ -7,6 +7,7 @@ export ZSH=/Users/matthew/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+#ZSH_THEME="powerlevel9k/powerlevel9k"
 ZSH_THEME="pygmalion"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -71,6 +72,8 @@ export PATH=$PATH:~/.composer/vendor/bin
 #   export EDITOR='mvim'
 # fi
 
+export EDITOR=vim
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -81,8 +84,9 @@ export PATH=$PATH:~/.composer/vendor/bin
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
 source ~/.aliases/*
+
+# Powerline Settings
+#POWERLEVEL9K_HOME_SUB_ICON=' '
+#POWERLEVEL9K_DIR_PATH_SEPARATOR='  '
