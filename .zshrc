@@ -1,4 +1,4 @@
-export ZSH="/Users/matthew/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 #
 # Antigen
@@ -30,6 +30,9 @@ antigen apply
 #
 # Setup
 #
+
+# GOPATH
+export GOPATH="$HOME/Development/go"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
