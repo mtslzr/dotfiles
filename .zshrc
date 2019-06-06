@@ -31,8 +31,9 @@ antigen apply
 # Setup
 #
 
-# GOPATH
+# Go
 export GOPATH="$HOME/Development/go"
+export PATH="$PATH:$GOPATH/bin"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -44,3 +45,17 @@ eval $(thefuck --alias)
 #
 # Aliases
 #
+
+alias venv="source .venv/bin/activate; which python"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/matthew/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/matthew/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/matthew/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/matthew/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/matthew/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/matthew/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh
+# added by travis gem
+[ -f /Users/matthew/.travis/travis.sh ] && source /Users/matthew/.travis/travis.sh
